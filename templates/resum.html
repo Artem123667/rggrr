@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{%  block body %}
+ <section id="contact" class="contact ">
+    <div class="container text-center justify-content center ">
+
+      <div class="section-title">
+        <h2>Оставте заявку</h2>
+      </div>
+
+
+
+        <form  action="/contactsdb" method="post" role="form" class="eform mt-4" >
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Имя" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Ваш Email" required>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="post" id="post" placeholder="Тема сайта" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Техническое задание" required></textarea>
+        </div>
+        <div class="my-3">
+
+        </div>
+        <div class="text-center"><button class=" btn btn-outline-success" type="submit">Отправить</button></div>
+        </form>
+
+    </div>
+     </div>
+  </section><!-- конец секции Контакты -->
+
+{% endblock %}

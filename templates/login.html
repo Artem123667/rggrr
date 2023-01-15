@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{%  block body %}
+
+<hr>
+<h2>Список заказов</h2>
+<ul class="list-posts">
+{% for p in posts %}
+<li>
+<p class="title"><a href="{{ url_for('showPost', id_post=p.id)}}">{{p.id}}</a></p>
+<p class="annonce">{{ p.name[:50]}}</p>
+<p class="annonce">{{ p.email[:50]}}</p>
+    <p class="annonce">{{ p.post[:50]}}</p>
+   <p class="annonce">{{ p.message[:50]}}</p>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}

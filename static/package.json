@@ -1,0 +1,35 @@
+{
+  "name": "-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rsync": "0.0.8",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "postcss-plugin": "^1.0.0",
+    "sugarss": "^2.0.0",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor-Polonskiy/-portfolio.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igor-Polonskiy/-portfolio/issues"
+  },
+  "homepage": "https://github.com/Igor-Polonskiy/-portfolio#readme"
+}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{%  block body %}
+ <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text-uppercase ">
+          <h2>Мои работы</h2>
+          <hr class="col-4 hr">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+       <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/comodo.png') }}" alt="сайт про еду"></a>
+        </div>
+        <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/mountine.png') }}" alt="сайт про игры"></a>
+        </div>
+        <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/fix6.png') }}" alt="сайт визитка"></a>
+        </div>
+        <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/stories.png') }}" alt="интернет магазин станков"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts dark_color" id="contacts">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text-uppercase ">
+          <h2>мои контакты</h2>
+          <hr class="col-4 hr">
+          <p>Работаю с 10:00 до 17:00. Выходной: суббота, воскресенье</p>
+        </div>
+      </div>
+        <div class="row justify-content-spacebetween">
+          <div class="col-12 col-md-12 col-xl-4 why__me__item">
+            <a href="mailto:polonskiybuslaevigor@gmail.com"><div class="contacts__ico blue">
+             <i class="far fa-envelope"></i>
+            </div>
+            <h5>artem.samolygo@bk.ru</h5>
+          </a>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-xl-4 why__me__item"><a href="skype:barlogfire">
+            <div class="contacts__ico blue">
+             <i class="fab fa-skype"></i>
+            </div>
+            <h5>artem.sd</h5>
+          </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4 why__me__item">
+            <a href="https://tele.click/PolonskiiIgor">
+            <div class="contacts__ico blue">
+             <i class="fab fa-telegram-plane"></i>
+            </div>
+            <h5>@incompetence</h5>
+          </a>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+{% endblock %}

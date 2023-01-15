@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='carusel.css')}}">
+{% endblock %}
+{% block title %}
+Портфолио
+{% endblock %}
+
+{%  block body %}
+<section class="why__me dark_color">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text-uppercase ">
+          <h2>почему выбирают меня</h2>
+          <hr class="col-4 hr">
+          <p>весь процесс работы вы можете контролировать - отслеживая изменения по ссылке, предоставляемой каждому клиенту</p>
+        </div>
+      </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-6 why__me__item">
+            <div class="why__me__ico blue">
+             <i class="fas fa-phone-square"></i>
+            </div>
+            <h5>всегда на связи</h5>
+          </div>
+          <div class="col-lg-3 col-6 why__me__item">
+            <div class="why__me__ico blue">
+             <i class="fas fa-history"></i>
+            </div>
+            <h5>приступаю сразу</h5>
+          </div>
+          <div class="col-lg-3 col-6 why__me__item">
+            <div class="why__me__ico blue">
+             <i class="fas fa-compress-arrows-alt"></i>
+            </div>
+            <h5>верстаю точно</h5>
+          </div>
+          <div class="col-lg-3 col-6 why__me__item">
+            <div class="why__me__ico blue">
+             <i class="fas fa-hourglass-half"></i>
+            </div>
+            <h5>сдаю в срок</h5>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text-uppercase ">
+          <h2>Мои работы</h2>
+          <hr class="col-4 hr">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+       <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/comodo.png') }}" alt="сайт про еду"></a>
+        </div>
+        <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/mountine.png') }}" alt="сайт про игры"></a>
+        </div>
+        <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/fix6.png') }}" alt="сайт визитка"></a>
+        </div>
+        <div class="portfolio__item col-lg-6 col-md-12">
+          <a target="_blank" href="#"><img src="{{ url_for('static', filename='img/stories.png') }}" alt="интернет магазин станков"></a>
+        </div>
+      </div>
+       </div>
+  </section>
+<script src="{{url_for('static', filename='main.js')}}"></script>
+
+{% endblock %}
